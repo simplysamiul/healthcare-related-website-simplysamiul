@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700;1,900&display=swap');
+.logo-name{
+    color: #fff !important;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+.logo-name small{
+    color: #f36438 !important;
+   
+
+}
+.navbar-container{
+    background-color: #0DA8A6;
+}
+.menu-items a{
+    text-decoration: none;
+    margin: 10px 15px;
+    color: #fff !important;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.menu-items a:hover{
+    color: #f36438;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #f36438;
+}
