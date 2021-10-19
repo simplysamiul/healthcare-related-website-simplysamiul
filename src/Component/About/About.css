@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700;1,900&display=swap');
+.about-container h1{
+    margin: 0;
+}
+.about-body{
+    padding: 50px;
+    background-image: url(../../resource/images/about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-info{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 20px;
+    justify-content: space-between;
+    font-family: 'Merriweather', serif;
+    color: white;
+}
+.chossen-description{
+    background-color: #0DA8A6;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+.chossen-description h3{
+    color: #2A303B;
+    font-weight: 600;
+}
+.chossen-description p{
+    text-align: justify;
+}
+.cart-info{
+    background-color: #2A303B;
+    color: lightgray;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.cart-info h4{
+    color: #0DA8A6;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 900px){
+    .about-info{
+        grid-template-columns: repeat(1,1fr);
+    }   
+}
