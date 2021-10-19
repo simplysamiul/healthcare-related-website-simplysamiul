@@ -25,7 +25,6 @@
     transition: 0.3s;
 }
 .menu-items a:hover{
-    color: #f36438;
     padding-bottom: 5px;
-    border-bottom: 3px solid #f36438;
+    border-bottom: 3px solid #2A303B;
 }
