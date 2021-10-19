@@ -9,6 +9,8 @@ import Menubar from './Component/Shared/Menubar/Menubar';
 import Home from './Component/Home/Home/Home';
 import Footer from './Component/Shared/Footer/Footer';
 import About from './Component/About/About';
+import Doctors from './Component/Doctors/Doctors';
+import NotFound from './Component/NotFound/NotFound';
 
 function App() {
   return (
@@ -22,8 +24,14 @@ function App() {
           <Route path="/home">
             <Home />
           </Route>
-          <Route to="/about">
+          <Route path="/doctors">
+            <Doctors />
+          </Route>
+          <Route path="/about">
             <About />
+          </Route>
+          <Route path="*">
+            <NotFound />
           </Route>
         </Switch>
         <Footer />
