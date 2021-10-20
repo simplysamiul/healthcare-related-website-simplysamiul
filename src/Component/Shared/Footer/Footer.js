@@ -88,7 +88,7 @@ const Footer = () => {
                     <h3>Contact Details</h3>
                     <p><i class="fas fa-phone-square-alt"></i> (+880) 173 5006 481</p>
                     <p><i class="far fa-envelope"></i> info@ours-clinic.com</p>
-                    <p><i class="fas fa-globe"></i> website: www.google.com</p>
+                    <p><i class="fas fa-globe"></i> https://ours-clinic.web.app/</p>
                     <p><i class="fas fa-map-marked-alt"></i> Dahaka-1216 Bangladesh</p>
                 </div>
             </div>

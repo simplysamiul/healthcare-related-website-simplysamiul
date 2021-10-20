@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700;1,900&display=swap');
+.services-area{
+    margin: 50px;
+}
+.section-title{
+    color: #2A303B;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+}
+.section-title span{
+    color: #0DA8A6;
+}
