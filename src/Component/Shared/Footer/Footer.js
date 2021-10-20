@@ -74,31 +74,31 @@ const Footer = () => {
                 <div className="services">
                     <h3>Our Services</h3>
                     <ul>
-                        <li><i class="fas fa-chevron-right"></i> Neurology</li>
-                        <li><i class="fas fa-chevron-right"></i> Cardiology</li>
-                        <li><i class="fas fa-chevron-right"></i> Surgery</li>
-                        <li><i class="fas fa-chevron-right"></i> Dentist</li>
-                        <li><i class="fas fa-chevron-right"></i> Orthopedic</li>
-                        <li><i class="fas fa-chevron-right"></i> X-ray</li>
-                        <li><i class="fas fa-chevron-right"></i> Dental</li>
-                        <li><i class="fas fa-chevron-right"></i> Dermatologist</li>
+                        <li><i className="fas fa-chevron-right"></i> Neurology</li>
+                        <li><i className="fas fa-chevron-right"></i> Cardiology</li>
+                        <li><i className="fas fa-chevron-right"></i> Surgery</li>
+                        <li><i className="fas fa-chevron-right"></i> Dentist</li>
+                        <li><i className="fas fa-chevron-right"></i> Orthopedic</li>
+                        <li><i className="fas fa-chevron-right"></i> X-ray</li>
+                        <li><i className="fas fa-chevron-right"></i> Dental</li>
+                        <li><i className="fas fa-chevron-right"></i> Dermatologist</li>
                     </ul>
                 </div>
                 <div className="contact-details">
                     <h3>Contact Details</h3>
-                    <p><i class="fas fa-phone-square-alt"></i> (+880) 173 5006 481</p>
-                    <p><i class="far fa-envelope"></i> info@ours-clinic.com</p>
-                    <p><i class="fas fa-globe"></i> https://ours-clinic.web.app/</p>
-                    <p><i class="fas fa-map-marked-alt"></i> Dahaka-1216 Bangladesh</p>
+                    <p><i className="fas fa-phone-square-alt"></i> (+880) 173 5006 481</p>
+                    <p><i className="far fa-envelope"></i> info@ours-clinic.com</p>
+                    <p><i className="fas fa-globe"></i> https://ours-clinic.web.app/</p>
+                    <p><i className="fas fa-map-marked-alt"></i> Dahaka-1216 Bangladesh</p>
                 </div>
             </div>
             <div className="footer-end">
                 <div className="social-icon">
-                <i class="fab fa-facebook-f animate-bounce"></i>
-                <i class="fab fa-twitter animate-bounce duration-500"></i>
-                <i class="fab fa-skype animate-bounce"></i>
-                <i class="fab fa-google-plus-g animate-bounce"></i>
-                <i class="fab fa-linkedin-in animate-bounce"></i>
+                <i className="fab fa-facebook-f animate-bounce"></i>
+                <i className="fab fa-twitter animate-bounce duration-500"></i>
+                <i className="fab fa-skype animate-bounce"></i>
+                <i className="fab fa-google-plus-g animate-bounce"></i>
+                <i className="fab fa-linkedin-in animate-bounce"></i>
                 </div>
             </div>
         </div>

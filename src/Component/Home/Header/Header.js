@@ -22,7 +22,7 @@ const Header = () => {
                 <Carousel.Caption className="header-info
                 ">
                 <h3>Health is a state of complete physical, mental, and social well-being and not merely the absence of disease or infirmity.</h3>
-                <Link to="/booking"><button className="header-button animate-bounce">Online-Booking</button></Link>
+                <Link to="/doctors"><button className="header-button animate-bounce">Online-Booking</button></Link>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>

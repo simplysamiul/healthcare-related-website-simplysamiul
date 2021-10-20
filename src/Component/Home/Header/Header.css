@@ -5,7 +5,7 @@
 }
 .header-button{
     text-decoration: none;
-    background-color: #e45124;
+    background-color: #2A303B;
     font-size: 25px;
     font-weight: 600;
     padding: 12px 30px;
@@ -15,7 +15,7 @@
     font-family: 'Merriweather', serif;
 }
 .header-button:hover{
-    background-color: #a53b1b;
+    background-color: #0DA8A6;
 }
 .header-info{
     margin-bottom: 15px !important;

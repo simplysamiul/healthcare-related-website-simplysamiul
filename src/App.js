@@ -11,6 +11,7 @@ import Footer from './Component/Shared/Footer/Footer';
 import About from './Component/About/About';
 import Doctors from './Component/Doctors/Doctors';
 import NotFound from './Component/NotFound/NotFound';
+import ServiceDetails from './Component/Home/Services/ServiceDetails/ServiceDetails';
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path="/doctors">
             <Doctors />
+          </Route>
+          <Route exact path="/details/:service">
+            <ServiceDetails />
           </Route>
           <Route path="*">
             <NotFound />
