@@ -13,10 +13,12 @@ import Doctors from './Component/Doctors/Doctors';
 import NotFound from './Component/NotFound/NotFound';
 import ServiceDetails from './Component/Home/Services/ServiceDetails/ServiceDetails';
 import Login from './Component/Register/Login/Login';
+import AuthProvider from './Component/context/AuthProvider';
+import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
-    
+    <AuthProvider>
       <Router>
         <Menubar />
         <Switch>
@@ -35,15 +37,16 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <Route exact path="/details/:service">
+          <PrivateRoute exact path="/details/:service">
             <ServiceDetails />
-          </Route>
+          </PrivateRoute>
           <Route path="*">
             <NotFound />
           </Route>
         </Switch>
         <Footer />
       </Router>
+      </AuthProvider>
     
   );
 }

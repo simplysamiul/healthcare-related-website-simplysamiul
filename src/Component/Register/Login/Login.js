@@ -1,8 +1,10 @@
 import React from 'react';
 import './Login.css';
 import formLogo from '../../../resource/logo.png';
+import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
+    const { googleLogIn } = useAuth();
     return (
             <div className="login-container flex justify-center items-center">
             <div className="login-area mx-auto">
@@ -22,7 +24,7 @@ const Login = () => {
                 <p> ---------- or ----------</p>
                 <div className="google-button flex justify-center items-center">
                 <img src="https://img.icons8.com/color/20/000000/google-logo.png"/>
-                    <button>Google-logIn</button>
+                    <button onClick={googleLogIn}>Google-logIn</button>
                 </div>
             </div>
                 </div>
