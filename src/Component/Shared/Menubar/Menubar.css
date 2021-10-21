@@ -28,3 +28,64 @@
     padding-bottom: 5px;
     border-bottom: 3px solid #2A303B;
 }
+.menu-items button{
+    margin: 10px 15px;
+    background: #2A303B;
+    color: white;
+    font-family: 'Merriweather', serif;
+    padding: 5px 10px;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    border: 1px solid white;
+}
+.menu-items button:hover{
+    background: white;
+    color: #2A303B;
+    border: 1px solid #2A303B;
+}
+.renponsive-user{
+    display: none;
+}
+.user-img{
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    margin: 8px 15px;
+}
+.empty-user{
+    border: 1px solid #2A303B;
+    width: 30px;
+    padding: 3px;
+    border-radius: 15px;
+    margin: 8px 10px;
+    background: white;
+}
+.user-name{
+    font-weight: 600;
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 600px){
+    .menu-items{
+        display: block;
+    }
+
+    .menu-items a{
+        display: block;
+    }
+}
+@media only screen and (max-width: 990px){
+    .renponsive-user{
+        display: block;
+    }
+    .regular-img{
+        display: none;
+    }
+    .renponsive-user img{
+        margin-right: 0px;
+        
+    }   
+}

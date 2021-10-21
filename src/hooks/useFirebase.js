@@ -11,10 +11,7 @@ const useFirebase = () =>{
     // Google authentication
     const googleLogIn = () =>{
         const goolgeProvider = new GoogleAuthProvider();
-        signInWithPopup(auth, goolgeProvider)
-        .then(result => {
-            setUser(result.user);
-        })
+        return signInWithPopup(auth, goolgeProvider)
     }
 
     // Observer
@@ -33,7 +30,7 @@ const useFirebase = () =>{
     const logOut = () =>{
         signOut(auth)
         .then(()=>{
-
+            setUser({});
         })
     }
 
