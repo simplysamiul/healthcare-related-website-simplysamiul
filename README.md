@@ -13,3 +13,10 @@ This is healtcare website. There are have some service for patent.In the home pa
 4. This site is totally responsive for mobile and tabel.
 
 so, this is the short description about this project if you want to see visually please clink the live link.
+
+
+
+![screenshot (10)](https://user-images.githubusercontent.com/76746810/138298711-8db9f3f8-ed11-400b-a43b-4c8c8d997c88.png)
+
+
+![screenshot (11)](https://user-images.githubusercontent.com/76746810/138298992-7deb22a3-26d4-4160-b65c-057b9802df00.png)
