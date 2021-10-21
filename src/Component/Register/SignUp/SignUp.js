@@ -3,9 +3,12 @@ import logoTwo from '../../../resource/logo.png';
 import { useLocation, useHistory, Link } from 'react-router-dom';
 import './SignUp.css';
 import useAuth from "../../../hooks/useAuth";
+import { useState } from "react";
 
 const SignUp = () => {
-    const { googleLogIn } = useAuth();
+    const { googleLogIn, createAccount } = useAuth();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
     // const location = useLocation();
     const history = useHistory();
     // const redirect_url = location.state?.from || "/home";
@@ -16,7 +19,11 @@ const SignUp = () => {
         })
     }
     const { register, handleSubmit } = useForm();
-    const onSubmit = (data) => console.log(data);
+    const onSubmit = (data) => {
+        setEmail(data.email);
+        setPassword(data.password);
+
+    };
     return (
         <div className="register-arrea">
           <div className="login-area">
@@ -31,11 +38,12 @@ const SignUp = () => {
                 <div>
                 <form className="registration-form" onSubmit={handleSubmit(onSubmit)}>
                 <h3>Create Account</h3>
-                <input {...register("firstName")} placeholder="First name" />
-                <input {...register("lastName")} placeholder="Last name" />
-                <input {...register("email")} placeholder="enter email" />
-                <input {...register("password")} placeholder="enter password" />
-                <input className="signIn-button" type="submit" value="Submit"/>
+                <input {...register("firstName")} placeholder="First name" required/>
+                <input {...register("lastName")} placeholder="Last name" required/>
+                <input {...register("email", {pattern:/\S+@\S+\.\S+/})} placeholder="enter email" required/>
+                <input type="password" {...register("password", {pattern:/^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8}$/})} placeholder="enter password" required/>
+                <p> <small style={{color:"red"}}>password must be:</small> (two uppercase letters,one special case letter,two digits,three lowercase letters)</p>
+                <input  className="signIn-button" type="submit" value="Submit"/>
             </form>
             <div className="already-login">
             <p> Already Registered? <Link to="/login">Log-In</Link> </p>
@@ -49,7 +57,8 @@ const SignUp = () => {
         </div>
     </div>
     </div>
-    );                                      
+    );
+                             
 };
 
 export default SignUp;

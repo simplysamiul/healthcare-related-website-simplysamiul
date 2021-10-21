@@ -38,6 +38,9 @@
     color: lightgray;
     margin: 20px 0;
 }
+.input-area a{
+    color: #0DA8A6;
+}
 .google-button{
     width: 100%;
     background: white;

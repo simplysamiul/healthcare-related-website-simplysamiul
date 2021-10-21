@@ -9,7 +9,6 @@ const Login = () => {
     const location = useLocation();
     const history = useHistory();
     const redirect_url = location.state?.from || "/home";
-    console.log( "come form",location.state?.from);
     const handelGoogleLogIn = () =>{
         googleLogIn()
         .then(result => {

@@ -22,6 +22,13 @@
     border-radius: 10px;
     border: 2px solid #0DA8A6;
 }
+.registration-form p{
+    width: 300px;
+    font-size: 14px;
+    color: #e8d233;
+    padding-left: 5px;
+    padding-top: 5px;
+}
 .signIn-button{
     background: #0DA8A6;
     color: white;
@@ -33,7 +40,9 @@
     text-align: center;
     margin-top: 20px;
 } 
-
+.already-login a{
+    color: #0DA8A6;
+}
 @media only screen and (max-width: 850px){
     .register-arrea{
         margin: 50px 30px;

@@ -7,7 +7,6 @@ import './Menubar.css';
 
 const Menubar = () => {
     const {user, logOut} = useAuth();
-    console.log(user.email);
     const history = useHistory();
     const menuSignIn = () =>{
         history.push('/register');
