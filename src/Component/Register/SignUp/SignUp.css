@@ -1,0 +1,44 @@
+.register-arrea{
+    margin: 80px 120px;
+}
+.registration-container{
+    background: #2A303B;
+    width: 100%;
+    padding: 40px 50px;
+}
+.registration-form h3{
+    text-align: center;
+    color: #0DA8A6;
+    margin-top: 30px;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+.registration-form input{
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    padding: 3px 10px;
+    border-radius: 10px;
+    border: 2px solid #0DA8A6;
+}
+.signIn-button{
+    background: #0DA8A6;
+    color: white;
+    font-weight: 600px;
+    font-family: 'Merriweather', serif;
+}
+.already-login p{
+    color: lightgray;
+    text-align: center;
+    margin-top: 20px;
+} 
+
+@media only screen and (max-width: 850px){
+    .register-arrea{
+        margin: 50px 30px;
+    }
+    .registration-container{
+        flex-direction: column;
+    }
+}

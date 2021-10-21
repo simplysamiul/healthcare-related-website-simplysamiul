@@ -46,12 +46,12 @@
     padding: 15px;
     font-weight: 600;
 }
-@media only screen and (max-width: 820px){
+@media only screen and (max-width: 825px){
     .doctors-container{
         display: block;
     }
-    .doctors-schedule table td{
-        padding: 5px;
+    .doctors-schedule table {
+        display: none;
     }
 
 }

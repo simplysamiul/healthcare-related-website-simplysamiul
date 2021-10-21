@@ -2,7 +2,7 @@ import React from 'react';
 import './Login.css';
 import formLogo from '../../../resource/logo.png';
 import useAuth from '../../../hooks/useAuth';
-import { useLocation, useHistory } from 'react-router-dom';
+import { useLocation, useHistory, Link } from 'react-router-dom';
 
 const Login = () => {
     const { googleLogIn } = useAuth();
@@ -32,6 +32,7 @@ const Login = () => {
                         <input type="email" name="" id="" placeholder="enter email*" />
                         <input type="password" name="" id="" placeholder="enter password*"/>
                         <input className="login-button" type="button" value="Log-In" />
+                        <p>Are You New ? <Link to="/register">Create account</Link> </p>
                         <p> ---------- or ----------</p>
                         <div onClick={handelGoogleLogIn} className="google-button flex justify-center items-center">
                         <img src="https://img.icons8.com/color/20/000000/google-logo.png" alt=""/>

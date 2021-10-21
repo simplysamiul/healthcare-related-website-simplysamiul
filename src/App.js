@@ -15,6 +15,7 @@ import ServiceDetails from './Component/Home/Services/ServiceDetails/ServiceDeta
 import Login from './Component/Register/Login/Login';
 import AuthProvider from './Component/context/AuthProvider';
 import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
+import SignUp from './Component/Register/SignUp/SignUp';
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/register">
+            <SignUp />
           </Route>
           <PrivateRoute exact path="/details/:service">
             <ServiceDetails />

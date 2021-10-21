@@ -1,13 +1,17 @@
 import React from 'react';
 import { Container, Navbar } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink,Link, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import logo from '../../../resource/logo.png';
 import './Menubar.css';
 
 const Menubar = () => {
     const {user, logOut} = useAuth();
-    console.log(user);
+    console.log(user.email);
+    const history = useHistory();
+    const menuSignIn = () =>{
+        history.push('/register');
+    }
     return (
         <Navbar expand="lg" className="navbar-container" sticky="top">
             <Container>
@@ -15,7 +19,7 @@ const Menubar = () => {
                 /><span className="logo-name">Ours-<small>Clinic</small> </span></Navbar.Brand>
                 <div className="renponsive-user">
                 {
-                        user.photoURL && <img className="user-img" src={user.photoURL} alt="" title={user.displayName} />
+                        user.photoURL && <img className="user-img" src={user.photoURL} alt="" title={user.email} />
                     }
                     {
                         user.displayName && <p className="user-name">{user.displayName}</p>
@@ -30,6 +34,9 @@ const Menubar = () => {
                     {
                         user.email?<button onClick={logOut}>Log-Out</button>
                         :<NavLink to="/login">Log-In</NavLink>
+                    }
+                    {
+                        !user.email && <button onClick={menuSignIn}>Sign-Up</button>
                     }
                    <div className="regular-img flex items-center justify-center">
                    {
